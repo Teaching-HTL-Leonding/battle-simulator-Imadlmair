@@ -128,7 +128,7 @@ switch (Player2)
 
     default:
         System.Console.WriteLine("invalid input");
-        break;
+        default;
 }
 
 while (Player1health > 0 && Player2health > 0)
@@ -139,4 +139,4 @@ while (Player1health > 0 && Player2health > 0)
 
 if (Player1health > 0) { Console.WriteLine("Player 1 wins"); }
 else if (Player2health > 0) { Console.WriteLine("Player 2 wins"); }
-else if (Player1health <= 0 && Player2health <= 0) { Console.WriteLine("No winner"); }
+else  Console.WriteLine("No winner"); 
